@@ -8,12 +8,19 @@ File Path<br>
 
 <pre><code>
 document.addEventListener('DOMContentLoaded', function() {
-  let tt__customCss = ``;
   $.ajax({
       url: 'https://raw.githubusercontent.com/erist/slack-theme/master/black.css', // css file url
       success: function(css) {
-          $('<style></style>').appendTo('head').html(css + tt__customCss);
+          $('<style></style>').appendTo('head').html(css);
       }   
   });
 });
+</code></pre>
+
+Sidebar<br>
+  Preferences > Sidebar > Custom Theme
+  
+1. Input below Color codes:
+<pre><code>
+#363636,#444A47,#D39B46,#FEFEFE,#434745,#FEFEFE,#99D04A,#DB6668
 </code></pre>
