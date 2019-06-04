@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
       url: 'https://raw.githubusercontent.com/erist/slack-theme/master/black.css', // css file url
       success: function(css) {
           $('<style></style>').appendTo('head').html(css);
-      }   
-  });
+  		}
+	});
 });
 </code></pre>
 
